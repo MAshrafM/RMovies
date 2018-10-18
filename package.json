@@ -18,7 +18,7 @@
     "react-scripts": "2.0.5",
     "redux": "^4.0.1"
   },
-  "scripts": {    
+  "scripts": {
     "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
     "start-js": "react-scripts start",
     "start": "npm-run-all -p watch-css start-js",
