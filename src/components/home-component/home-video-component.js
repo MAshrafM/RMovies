@@ -4,7 +4,7 @@ class HomeVideoComponent extends Component{
     constructor(props){
         super(props);
         this.state = {
-            videoClassValue: 'video__parent video__parent--hidden'
+            videoClassValue: 'home__video-parent home__video-parent--hidden'
         }
         this.showVideoComponent = this.showVideoComponent.bind(this);
     }
