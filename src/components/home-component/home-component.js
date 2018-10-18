@@ -46,6 +46,13 @@ class HomeComponent extends Component{
             </div>
         )
     }
+
+    componentDidMount(){
+        let viewportWidth = window.innerWidth;
+        if(!this.state.loadVideoElement && viewportWidth > 767){
+            this.loadVideoComponent();
+        }
+    }
 }
 
 export default HomeComponent;
