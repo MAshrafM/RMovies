@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700|Roboto:300,400,500,700,900');
+$contentFont: 'Roboto Mono', serif;
+$headingFont: 'Roboto', sans-serif;
+
+/* colors */
+$black: #000000;
+$white: #ffffff;
+$grey: #738290;
+$lightGrey: #cccccc;
+$green: #139A43;
+$blue: #00FFC7;
+$red: #ec0000;
+
+@mixin transition($type, $duration, $style) {
+  transition-property: $type;
+  -moz-transition-property: $type;
+  -webkit-transition-property: $type;
+  -o-transition-property: $type;
+  -ms-transition-property: $type;
+  transition-duration: $duration;
+  -webkit-transition-duration: $duration;
+  -ms-transition-duration: $duration;
+  -moz-transition-duration: $duration;
+  -o-transition-duration: $duration;
+  transition-timing-function: $style;
+  -webkit-transition-timing-function: $style;
+  -o-transition-timing-function: $style;
+  -ms-transition-timing-function: $style;
+  -moz-transition-timing-function: $style;
+}
+
+@mixin transform($args...){
+    -webkit-transform: $args;
+    -ms-transform: $args;
+    transform: $args;
+}
+@mixin user-select($args...){
+    -webkit-user-select: $args;
+    user-select: $args;
+}
+
+@mixin placeholder {
+    ::-webkit-input-placeholder {@content}
+    :-moz-placeholder           {@content}
+    ::-moz-placeholder          {@content}
+    :-ms-input-placeholder      {@content}  
+}
+
+@mixin breakpoint($point) {
+    @if $point == landscape {
+        @media (min-width: 481px) and (orientation: landscape) { @content ; }
+    }
+     @else if $point == tablet {
+        @media (min-width: 768px) { @content ; }
+    }
+    @else if $point == desktop {
+        @media (min-width: 961px) { @content ; }
+    }
+    @else if $point == lg-desktop {
+        @media (min-width: 1025px)  { @content ; }
+    }
+}
