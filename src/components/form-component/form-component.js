@@ -131,7 +131,7 @@ class FormComponent extends Component {
                 </AnimateHeight>
                 <FormGroup className="position__relative">
                     <FormControl placeholder="Example - The Matrix" className="search-form__input" value={formSetupObj.inputTextValue} onChange={formSetupObj.inputChangeEvent} />
-                    <span className="search__form__filter-pre-text">
+                    <span className="search__form__search-icon">
                         <img src={SearchIcon} className="img-fluid" alt="Search" />
                     </span>
                     <div className={searchErrorClass}>Please Enter Your Search</div>

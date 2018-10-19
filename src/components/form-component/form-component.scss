@@ -1,9 +1,18 @@
 @import "../../_scss/vars";
 
 .search__form{
-    max-width: 350px;
-    margin: 45 auto 0;
+    max-width: 400px;
+    margin: 45px auto 10px;
+    position: relative;
+    z-index: 10;
+    padding: 25px;
+    border: 1px solid white;
+    background-color: rgba(0, 0, 0, .7);
 
+    .form-control:disabled{
+        background-color: rgb(45, 45, 45);
+    }
+    
     &__input{
         background: transparent;
         border-radius: 0;
@@ -18,9 +27,20 @@
         }
 
         &--filter{
-            padding-left: 95px;
+            padding-left: 125px;
             text-transform: capitalize;
         }
+    }
+    
+    .form-control{
+      padding-left: 2.75rem;
+    }
+    
+    &__search-icon{
+      position: absolute;
+      width: 40px;
+      text-align: center;
+      top: 0;
     }
 
     &__filter-icon{
@@ -35,6 +55,8 @@
         img{
             width: 25px;
             margin-left: auto;
+            position: absolute;
+            right: 10px;
         }
     }
 
@@ -44,8 +66,8 @@
         background: black;
         padding: 5px;
         position: absolute;
-        top: 10px;
-        left: 5px;
+        top: 3px;
+        left: 0px;
         font-size: 1.2rem;
         font-weight: 600;
         letter-spacing: 2px;
@@ -62,10 +84,15 @@
             margin: 0;
         }
     }
-
+    
+    &__show-grid{
+      justify-content: space-evenly;
+    }
+    
     &__select-block{
         margin-top: 10px;
         padding: 5px;
+        cursor: pointer;
 
         .radio{
             label{
@@ -106,9 +133,7 @@
         img{
             width: 15px;
             display: inline-block;
-            margin-left: 7px;
             vertical-align: middle;
-            margin-top: -4px;
         }
     }
 }

@@ -2,7 +2,11 @@
 /* colors */
 .search__form {
   max-width: 350px;
-  margin: 45 auto 0; }
+  margin: 45px auto 0;
+  position: relative;
+  z-index: 10; }
+  .search__form .form-control:disabled {
+    background-color: #2d2d2d; }
   .search__form__input {
     background: transparent;
     border-radius: 0;
@@ -14,7 +18,7 @@
     .search__form__input:focus {
       box-shadow: 0px 1px 10px 0px rgba(0, 255, 199, 0.25); }
     .search__form__input--filter {
-      padding-left: 95px;
+      padding-left: 125px;
       text-transform: capitalize; }
   .search__form__filter-icon {
     cursor: pointer;
@@ -27,15 +31,17 @@
     z-index: 10; }
     .search__form__filter-icon img {
       width: 25px;
-      margin-left: auto; }
+      margin-left: auto;
+      position: absolute;
+      right: 10px; }
   .search__form__filter-pre-text {
     cursor: pointer;
     color: #00ffc7;
     background: black;
     padding: 5px;
     position: absolute;
-    top: 10px;
-    left: 5px;
+    top: 3px;
+    left: 0px;
     font-size: 1.2rem;
     font-weight: 600;
     letter-spacing: 2px;

@@ -22,7 +22,7 @@
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.7);
-  z-index: 99; }
+  z-index: 5; }
 
 .home__video-parent {
   position: absolute;
