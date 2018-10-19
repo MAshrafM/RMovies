@@ -1,7 +1,30 @@
 const initStateObj = {
-    appName: "RMovies"
+    appName: "RMovies",
+    searchListingResults: null,
+    searchListingType: null
 };
 
-export const RootReducer = (thisStateObj = initStateObj) => {
-    return thisStateObj;
+const displaySearchResults = "DISPLAY_SEARCH_RESULTS";
+
+export const RootReducer = (thisStateObj = initStateObj, thisActionObj) => {
+    switch(thisActionObj.type){
+        case displaySearchResults: {
+            return {
+                ...thisStateObj,
+                searchListingResults: thisActionObj.payload.searchResults,
+                searchListingType: thisActionObj.payload.searchType,
+                queryText: thisActionObj.payload.queryText
+            }
+        }
+        default:{
+            return thisStateObj;
+        }
+    }
+};
+
+export const DisplaySearchResultsAction = (obj) => {
+    return {
+        type: displaySearchResults,
+        payload: obj
+    }
 };
