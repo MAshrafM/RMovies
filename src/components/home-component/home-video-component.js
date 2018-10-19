@@ -12,7 +12,7 @@ class HomeVideoComponent extends Component{
     showVideoComponent(){
         this.setState(($prevState, nowProps) => {
             return{
-                videoClassValue: 'video__parent'
+                videoClassValue: 'home__video-parent'
             };
         });
     }

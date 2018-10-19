@@ -1,0 +1,114 @@
+@import "../../_scss/vars";
+
+.search__form{
+    max-width: 350px;
+    margin: 45 auto 0;
+
+    &__input{
+        background: transparent;
+        border-radius: 0;
+        height: auto;
+        line-height: 30px;
+        border: 1px solid rgba(255, 255, 255, .5);
+        padding-left: 35px;
+        color: $white;
+
+        &:focus{
+            box-shadow: 0px 1px 10px 0px rgba(0, 255, 199, 0.25);
+        }
+
+        &--filter{
+            padding-left: 95px;
+            text-transform: capitalize;
+        }
+    }
+
+    &__filter-icon{
+        cursor: pointer;
+        padding: 10px;
+        position: absolute;
+        top: 1px;
+        right: 1px;
+        width: calc(100% - 2px);
+        height: calc(100% - 2px);
+        z-index: 10;
+        img{
+            width: 25px;
+            margin-left: auto;
+        }
+    }
+
+    &__filter-pre-text{
+        cursor: pointer;
+        color: #00ffc7;
+        background: black;
+        padding: 5px;
+        position: absolute;
+        top: 10px;
+        left: 5px;
+        font-size: 1.2rem;
+        font-weight: 600;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        img{
+            max-width: 15px;
+        }
+    }
+
+    &__dropdown-filter-block{
+        margin-top: -25px;
+        margin-bottom: 15px;
+        .row{
+            margin: 0;
+        }
+    }
+
+    &__select-block{
+        margin-top: 10px;
+        padding: 5px;
+
+        .radio{
+            label{
+                padding-left: 0;
+                display: block;
+                position: relative;
+                input[type=radio]{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    opacity: 0;
+                }
+
+                .borderbox-container{
+                    padding: 8px 5px;
+                    border-radius: 5px;
+                    box-shadow: 1px 1px 5px 0px rgba(71,66,71,0.75);
+                    font-size: 1rem;
+
+                    img{
+                        margin-bottom: 12px;
+                        margin-top: 5px;
+                        max-width: 25px;
+                    }
+                }
+
+                input[type=radio]:checked ~ .borderbox-container{
+                    box-shadow: 1px 1px 10px 0px rgba(0, 255, 199, 0.75);
+                }
+            }
+        }
+    }
+
+    &__btn{
+        display: block;
+        width: 100%;
+        letter-spacing: 3px;
+        img{
+            width: 15px;
+            display: inline-block;
+            margin-left: 7px;
+            vertical-align: middle;
+            margin-top: -4px;
+        }
+    }
+}

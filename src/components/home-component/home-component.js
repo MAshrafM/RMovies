@@ -5,6 +5,7 @@ import bgWEBM from '../../assets/images/home-sample-video.webm';
 import bgMP4 from '../../assets/images/home-sample-video.mp4';
 
 import HomeVideoComponent from './home-video-component';
+import FormComponent from '../form-component/form-component';
 
 class HomeComponent extends Component{
     constructor(props){
@@ -42,6 +43,7 @@ class HomeComponent extends Component{
                         <img src={appSymbolIcon} className="img-fluid mx-auto home__content-unit--main-app-icon" alt="RMovies" title="RMovies" />
                         <h1 className="text-center home__content-unit--heading">R<span>Movies</span></h1>
                     </div>
+                    { <FormComponent />}   
                 </div>
             </div>
         )

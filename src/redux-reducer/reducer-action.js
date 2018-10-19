@@ -22,7 +22,7 @@ export const RootReducer = (thisStateObj = initStateObj, thisActionObj) => {
     }
 };
 
-export const DisplaySearchResultsAction = (obj) => {
+export const DisplaySearchResultAction = (obj) => {
     return {
         type: displaySearchResults,
         payload: obj
