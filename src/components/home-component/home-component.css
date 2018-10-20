@@ -65,7 +65,7 @@
   z-index: 5;
   max-width: 350px;
   margin: 0 auto;
-  padding: 130px 15px; }
+  padding: 35px 15px; }
   .home__content-unit--main-app-icon {
     max-width: 50px;
     box-shadow: 0px 1px 10px 0px rgba(0, 255, 199, 0.25);
@@ -77,7 +77,8 @@
   .home__content-unit--heading {
     font-size: 1.5rem;
     font-weight: 300;
-    letter-spacing: 8px; }
+    letter-spacing: 8px;
+    padding-top: 5px; }
     .home__content-unit--heading span {
       font-weight: 900;
       font-size: 3.5rem;

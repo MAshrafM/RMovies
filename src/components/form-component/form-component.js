@@ -63,7 +63,7 @@ class FormComponent extends Component {
 
     makeApiRequest(queryText, searchType){
         let locQuery = "?qt=" + queryText + "&pn=1&st=" + searchType;
-        this.props.history.push('/search-results', locQuery);
+        this.props.history.push('/search-results' + locQuery);
     }
 
     formSubmitHandler(event){
