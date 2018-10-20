@@ -3,7 +3,7 @@ import EmptyTreeIcon from '../../assets/icons/empty-tree-icon.svg';
 
 const NoResultsComponent = (props) => {
   return(
-    <section className="no-results-container position__relative">
+    <section className="search__results__no-results-container position__relative">
       <div className="borderbox-container">
         <header>
           <img src={EmptyTreeIcon} className="img-fluid mx-auto header-icon" alt="header icon" title="no results" />

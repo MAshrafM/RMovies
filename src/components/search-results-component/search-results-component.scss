@@ -1,0 +1,141 @@
+@import '../../_scss/vars';
+
+.search__results{
+  min-height: 100vh;
+  padding-bottom: 60px;
+  color: white;
+  &__no-results-container{
+    padding: 15px;
+    margin: 0 auto;
+    max-width: 600px;
+    
+    .borderbox-container{
+      position: relative;
+      margin: 100px auto -25px;
+      padding: 15px 15px 30px;
+      box-shadow: 0px 4px 15px -5px rgba(0,0,0,0.15);
+      
+      .header-icon{
+        max-width: 75px;
+        padding: 10px;
+        box-shadow: 0px 1px 5px 0px rgba(0,255,199,0.5);
+        border-radius: 5px;
+      }
+      h1{
+        font-size: 2.5rem;
+        text-transform: none;
+      }
+      p{
+        color: $grey;
+        opacity: 0.65;
+        font-family: $contentFont;
+      }
+      
+      &:after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background: rgba(255, 255, 255, 0.15);
+        border-radius: 50%;
+      }
+    }
+  }
+  
+  .results-listing{
+    padding-top: 45px;
+    @include breakpoint(tablet){
+      max-width: 768px;
+      margin: 0 auto;
+    }
+    @include breakpoint(desktop){
+      max-width: 961px;
+    }
+    @include breakpoint(lg-desktop){
+      max-width: 1025px;
+    }
+    .row{
+      margin: 0;
+      .search-top-seg{
+        padding: 15px;
+        &.heading{
+          @include breakpoint(tablet){
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            padding-left: 15px;
+            margin-left: 15px;
+            margin-bottom: 15px;
+          }
+          @include breakpoint(desktop){
+            position: sticky;
+            top: 15px;
+            margin-left: 0;
+          }
+          h2{
+            @include breakpoint(tablet){
+              margin-top: 10px;
+            }
+            font-size: 1.5rem;
+            letter-spacing: 5px;
+            margin-top: 25px;
+          }
+          p{
+            font-family: $contentFont;
+            color: $grey;
+            font-size: 1.2rem;
+          }
+        }
+        &.content{
+          .search-item{
+            margin-bottom: 45px;
+            min-height: 400px;
+            .borderbox-container{
+              height: 100%;
+              .img-container{
+                @include breakpoint(tablet){
+                  border: 1px solid transparent;
+                  border-left-color: rgba(255, 255, 255, 0.05);
+                  border-bottom-color: rgba(255, 255, 255, 0.05);
+                  padding-left: 8px;
+                }
+                .item-img{
+                  max-height: 320px;
+                  padding: 10px;
+                  box-shadow: 0px 4px 17px 0px rgba(204,204,204,0.55);
+                  @include breakpoint(tablet){
+                    margin-bottom: 8px;
+                    height: 260px;
+                  }
+                }
+              }
+              .item-name{
+                p{
+                  margin-top: 10px;
+                  font-size: 1.2rem;
+                  font-weight: 700;
+                  font-family: $contentFont;
+                  color: $green;
+                }
+              }
+              .footer-container{
+                position: absolute;
+                bottom: 0;
+                right: 15px;
+                padding: 5px;
+                background: rgba(255, 255, 255, .75);
+                border-radius: 50%;
+                box-shadow: 0px 1px 5px 0px rgba(204, 204, 204, 1);
+                img{
+                  padding: 5px;
+                  display: inline-block;
+                  max-width: 28px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

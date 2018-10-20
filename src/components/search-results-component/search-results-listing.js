@@ -18,7 +18,7 @@ const SearchResultsListing = ({setupProps}) => {
           <Row className="show-grid">
             <SearchItemComponent resultsArr={setupProps.resultsArray} searchType={setupProps.searchType} />
           </Row>
-          <div className="pagination-container text-center">
+          <div className="pagination__container text-center">
           {
             setupProps.totalPages > 1 && 
             <Pagination onChange={setupProps.paginationChangeHandler}

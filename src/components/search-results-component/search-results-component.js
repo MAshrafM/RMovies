@@ -101,7 +101,7 @@ class SearchResultsComponent extends Component{
     }
     
     return(
-      <div className="outer-border search-results">
+      <div className="outer-border search__results">
       {
         !!resultsListingSetup.totalResults && resultsListingSetup.totalResults > 0 ? <SearchResultsListing setupProps={resultsListingSetup} /> : 
         <WrapperObj>
