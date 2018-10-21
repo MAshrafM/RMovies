@@ -9,6 +9,8 @@ import ProductionCompaniesElement from './production-companies-element';
 import ProductionCountriesElement from './production-countries-element';
 import ReleaseRatingElement from './release-rating-element';
 
+import './movie-bio-component.css';
+
 class MovieBioComponent extends Component{
   constructor(props){
     super(props);

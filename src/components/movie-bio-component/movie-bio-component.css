@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700|Roboto:300,400,500,700,900");
+/* colors */
+.movie-bio .block-heading {
+  margin-bottom: 15px; }
+  .movie-bio .block-heading header {
+    display: inline-block; }
+    .movie-bio .block-heading header h2, .movie-bio .block-heading header h3 {
+      margin: 0 10px 0 20px;
+      color: #ffffff;
+      font-size: 2rem;
+      font-family: "Roboto Mono", serif;
+      letter-spacing: 2px;
+      text-transform: none;
+      border-left: 1px solid #00FFC7;
+      padding-left: 10px; }
+      .movie-bio .block-heading header h2 span, .movie-bio .block-heading header h3 span {
+        color: #738290;
+        font-weight: 500;
+        font-size: 0.9rem;
+        font-family: "Roboto", sans-serif;
+        letter-spacing: 5px;
+        margin-top: 6px;
+        text-transform: uppercase;
+        display: block; }
+
+.movie-bio .movie-jumbo {
+  min-height: 100vh; }
+  .movie-bio .movie-jumbo .curtain {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.58);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.58) 0%, rgba(0, 0, 0, 0.58) 38%, rgba(0, 0, 0, 0.58) 48%, rgba(0, 0, 0, 0.58) 63%, rgba(0, 0, 0, 0.64) 68%, black 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=1 ); }
+  .movie-bio .movie-jumbo .backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
+  .movie-bio .movie-jumbo .post-container {
+    z-index: 20;
+    position: absolute;
+    top: 58%;
+    transform: translateY(-50%);
+    width: 100%;
+    max-width: 450px;
+    padding: 15px; }
+    .movie-bio .movie-jumbo .post-container h1 {
+      letter-spacing: 2px;
+      margin: 0 0 -2px;
+      font-family: "Roboto Mono", serif; }
+    .movie-bio .movie-jumbo .post-container .genere-list {
+      margin-bottom: 0;
+      margin-top: 1px; }
+      .movie-bio .movie-jumbo .post-container .genere-list li {
+        color: #00FFC7;
+        display: inline-block;
+        font-weight: 400;
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin: 6px; }
+        .movie-bio .movie-jumbo .post-container .genere-list li:first-child {
+          margin-left: 0; }
+      .movie-bio .movie-jumbo .post-container .genere-list p {
+        margin: 30px 0;
+        font-size: 1.2rem;
+        line-height: 20px; }
+
+.movie-bio .prod {
+  background: #ffffff;
+  z-index: 20; }
+  .movie-bio .prod .row {
+    max-width: 1200px;
+    margin: 0 auto; }
+    .movie-bio .prod .row .blocks {
+      padding: 0; }
+    .movie-bio .prod .row .production-companies {
+      background: #ffffff; }
+      .movie-bio .prod .row .production-companies .outer-container {
+        padding: 30px 0; }
+        .movie-bio .prod .row .production-companies .outer-container .block-heading h2 {
+          color: #000000; }
+        .movie-bio .prod .row .production-companies .outer-container ul {
+          padding: 0 15px;
+          margin: 30px 0 0; }
+          .movie-bio .prod .row .production-companies .outer-container ul li {
+            color: #000000;
+            font-family: "Roboto Mono", serif;
+            font-size: 1.2rem;
+            display: inline-block;
+            padding: 5px; }
+            .movie-bio .prod .row .production-companies .outer-container ul li .borderbox-container {
+              padding: 5px;
+              border: 1px solid #000000; }
+    .movie-bio .prod .row .production-countries {
+      background: #ffffff; }
+      .movie-bio .prod .row .production-countries .outer-container {
+        padding: 30px 0; }
+        .movie-bio .prod .row .production-countries .outer-container .block-heading h3 {
+          color: #000000; }
+        .movie-bio .prod .row .production-countries .outer-container ul {
+          margin: 30px 0 0;
+          padding: 0 15px; }
+          .movie-bio .prod .row .production-countries .outer-container ul li {
+            padding: 5px;
+            display: inline-block; }
+            .movie-bio .prod .row .production-countries .outer-container ul li .borderbox-container {
+              padding: 15px;
+              border: 1px solid rgba(0, 0, 0, 0.05);
+              width: 140px;
+              overflow: hidden; }
+              .movie-bio .prod .row .production-countries .outer-container ul li .borderbox-container img {
+                max-width: 35px;
+                padding: 10px;
+                border-radius: 3px;
+                box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.15); }
+              .movie-bio .prod .row .production-countries .outer-container ul li .borderbox-container span {
+                display: block;
+                color: #000000; }
+              .movie-bio .prod .row .production-countries .outer-container ul li .borderbox-container .short-code {
+                font-weight: 700;
+                font-size: 4.0rem;
+                text-transform: uppercase;
+                margin: -15px 0 -20px;
+                text-align: left;
+                color: #cccccc;
+                text-shadow: -1px -1px 2px rgba(0, 0, 0, 0.15), 1px 1px 2px rgba(0, 0, 0, 0.35); }
+              .movie-bio .prod .row .production-countries .outer-container ul li .borderbox-container .country-name {
+                font-size: 1.2rem;
+                font-family: "Roboto Mono", serif;
+                color: #738290;
+                text-align: left;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap; }
+
+.movie-bio .credits {
+  z-index: 20;
+  background: rgba(0, 0, 0, 0.35); }
+  .movie-bio .credits .outer-container {
+    padding-top: 30px;
+    max-width: 1200px;
+    margin: 0 auto; }
+  .movie-bio .credits .row {
+    margin: 0; }
+    .movie-bio .credits .row .credits-seg {
+      padding: 0 8px;
+      margin-bottom: 20px; }
+      .movie-bio .credits .row .credits-seg .borderbox-container {
+        padding: 10px; }
+        .movie-bio .credits .row .credits-seg .borderbox-container .actor-name {
+          margin-top: 10px;
+          margin-bottom: 0;
+          font-weight: 400; }
+        .movie-bio .credits .row .credits-seg .borderbox-container .char-name {
+          color: #00FFC7;
+          font-family: "Roboto Mono", serif;
+          font-weight: 600; }
+        .movie-bio .credits .row .credits-seg .borderbox-container .actor-name, .movie-bio .credits .row .credits-seg .borderbox-container .char-name {
+          font-size: 1.2rem;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap; }
+
+.movie-bio .release-rating {
+  z-index: 20;
+  background: white; }
+  .movie-bio .release-rating .outer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 0; }
+    .movie-bio .release-rating .outer-container .block-heading {
+      margin-bottom: 40px; }
+      .movie-bio .release-rating .outer-container .block-heading h3 {
+        color: #000000; }
+    .movie-bio .release-rating .outer-container .countries {
+      padding: 0 20px; }
+      .movie-bio .release-rating .outer-container .countries .country-block {
+        margin-bottom: 35px; }
+        .movie-bio .release-rating .outer-container .countries .country-block .country-header {
+          padding: 15px;
+          border: 1px solid rgba(0, 0, 0, 0.05);
+          width: 140px;
+          overflow: hidden; }
+          .movie-bio .release-rating .outer-container .countries .country-block .country-header img {
+            max-width: 35px;
+            padding: 10px;
+            border-radius: 3px;
+            box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.15); }
+          .movie-bio .release-rating .outer-container .countries .country-block .country-header h4 {
+            font-weight: 700;
+            font-size: 4.5rem;
+            text-transform: uppercase;
+            margin: 10px 0 3px;
+            text-align: left;
+            color: #cccccc;
+            text-shadow: -1px -1px 2px rgba(0, 0, 0, 0.15), 1px 1px 2px rgba(0, 0, 0, 0.35); }
+          .movie-bio .release-rating .outer-container .countries .country-block .country-header p {
+            font-size: 1.2rem;
+            font-family: "Roboto Mono", serif;
+            color: #738290;
+            text-align: left;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap; }
+          .movie-bio .release-rating .outer-container .countries .country-block .country-header:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 250px;
+            border-top: 1px dotted rgba(0, 0, 0, 0.15);
+            z-index: -1; }
+        .movie-bio .release-rating .outer-container .countries .country-block .country-body {
+          margin-top: 5px; }
+          .movie-bio .release-rating .outer-container .countries .country-block .country-body ul {
+            margin-bottom: 0;
+            padding: 0 5px;
+            margin: 0 -10px; }
+            .movie-bio .release-rating .outer-container .countries .country-block .country-body ul li {
+              font-size: 1.2rem;
+              padding: 5px;
+              color: #000000; }
+              .movie-bio .release-rating .outer-container .countries .country-block .country-body ul li .borderbox-container {
+                padding: 10px;
+                border: 1px solid rgba(0, 0, 0, 0.05); }
+                .movie-bio .release-rating .outer-container .countries .country-block .country-body ul li .borderbox-container .rating {
+                  color: #000000;
+                  display: inline-block;
+                  font-weight: 700;
+                  font-size: 2.5rem;
+                  margin-bottom: 25px; }
+                  .movie-bio .release-rating .outer-container .countries .country-block .country-body ul li .borderbox-container .rating span {
+                    font-size: 1.2rem;
+                    display: block;
+                    color: #cccccc;
+                    text-transform: uppercase;
+                    letter-spacing: 3px; }
+                .movie-bio .release-rating .outer-container .countries .country-block .country-body ul li .borderbox-container .date, .movie-bio .release-rating .outer-container .countries .country-block .country-body ul li .borderbox-container .type {
+                  margin-bottom: 0;
+                  font-family: "Roboto Mono", serif; }
