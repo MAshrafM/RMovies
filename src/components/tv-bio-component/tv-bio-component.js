@@ -12,6 +12,7 @@ import RatingRadialElement from './rating-radial-element'
 import SeasonsListingElement from './seasons-listing-element'
 import SimilarShowElement from './similar-show-element'
 import WrapperObj from './wrapper-object'
+import './tv-bio-component.css'
 
 class TvBioComponent extends Component{
   constructor(props){

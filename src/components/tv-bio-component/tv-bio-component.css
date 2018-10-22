@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700|Roboto:300,400,500,700,900");
+/* colors */
+.tv-bio .block-heading {
+  margin-bottom: 15px; }
+  .tv-bio .block-heading header {
+    display: inline-block; }
+    .tv-bio .block-heading header h2, .tv-bio .block-heading header h3 {
+      margin: 0 10px 0 20px;
+      color: #ffffff;
+      font-size: 2rem;
+      font-family: "Roboto Mono", serif;
+      letter-spacing: 2px;
+      text-transform: none;
+      border-left: 1px solid #00FFC7;
+      padding-left: 10px; }
+      .tv-bio .block-heading header h2 span, .tv-bio .block-heading header h3 span {
+        color: #738290;
+        font-weight: 500;
+        font-size: 0.9rem;
+        font-family: "Roboto", sans-serif;
+        letter-spacing: 5px;
+        margin-top: 6px;
+        text-transform: uppercase;
+        display: block; }
+
+.tv-bio .tv-bio-jumbo {
+  min-height: 100vh; }
+  .tv-bio .tv-bio-jumbo .curtain {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.98); }
+  .tv-bio .tv-bio-jumbo .backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
+  .tv-bio .tv-bio-jumbo .content-box {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 15px;
+    z-index: 10; }
+    .tv-bio .tv-bio-jumbo .content-box .seg-container .post-container {
+      padding: 15px;
+      z-index: 5; }
+      .tv-bio .tv-bio-jumbo .content-box .seg-container .post-container h {
+        letter-spacing: 2px;
+        margin: 0 0 -2px;
+        font-family: "Roboto Mono", serif; }
+      .tv-bio .tv-bio-jumbo .content-box .seg-container .post-container .genre-list {
+        margin-bottom: 0;
+        margin-top: -8px; }
+        .tv-bio .tv-bio-jumbo .content-box .seg-container .post-container .genre-list li {
+          display: inline-block;
+          font-weight: 400;
+          font-size: 1.0rem;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          margin: 6px; }
+          .tv-bio .tv-bio-jumbo .content-box .seg-container .post-container .genre-list li:first-child {
+            margin-left: 0; }
+      .tv-bio .tv-bio-jumbo .content-box .seg-container .post-container .language-list li {
+        background: #000000;
+        color: #00FFC7;
+        padding: 3px 5px 5px;
+        border-radius: 5px;
+        display: inline-block;
+        font-family: "Roboto Mono", serif;
+        font-size: 1.1rem;
+        margin: 3px;
+        box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.25); }
+        .tv-bio .tv-bio-jumbo .content-box .seg-container .post-container .language-list li:first-child {
+          margin-left: 0; }
+      .tv-bio .tv-bio-jumbo .content-box .seg-container .post-container .about-info {
+        font-size: 1.3rem;
+        line-height: 20px;
+        margin-top: 45px; }
+      .tv-bio .tv-bio-jumbo .content-box .seg-container .post-container .first-release-info {
+        margin-top: 45px;
+        letter-spacing: 2px;
+        font-size: 1.2rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-family: "Roboto Mono", serif; }
+        .tv-bio .tv-bio-jumbo .content-box .seg-container .post-container .first-release-info span {
+          color: #00FFC7;
+          text-transform: none;
+          font-family: "Roboto", sans-serif;
+          letter-spacing: 0; }
+      .tv-bio .tv-bio-jumbo .content-box .seg-container .post-container .created-by {
+        margin-top: 45px;
+        font-size: 1.2rem;
+        font-family: "Roboto Mono", serif;
+        letter-spacing: 2px; }
+      .tv-bio .tv-bio-jumbo .content-box .seg-container .post-container .created-by-list {
+        margin-top: 15px; }
+        .tv-bio .tv-bio-jumbo .content-box .seg-container .post-container .created-by-list li {
+          display: inline-block;
+          max-width: 70px;
+          font-size: 1.2rem;
+          color: #00FFC7;
+          margin: 5px 8px; }
+          .tv-bio .tv-bio-jumbo .content-box .seg-container .post-container .created-by-list li img {
+            margin-bottom: 8px; }
+          .tv-bio .tv-bio-jumbo .content-box .seg-container .post-container .created-by-list li:first-child {
+            margin-left: 0; }
+    .tv-bio .tv-bio-jumbo .content-box .seg-container .img-container {
+      padding: 10px;
+      margin-left: auto;
+      margin-right: auto;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 1px 15px 35px 1px rgba(0, 0, 0, 0.95); }
+      @media (min-width: 768px) {
+        .tv-bio .tv-bio-jumbo .content-box .seg-container .img-container {
+          max-width: 450px; } }
+
+.tv-bio .seasons-box-container {
+  z-index: 10;
+  position: relative; }
+  .tv-bio .seasons-box-container .rating-radial {
+    width: 160px;
+    height: 160px;
+    margin: 0 auto;
+    border-radius: 50%;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5); }
+    .tv-bio .seasons-box-container .rating-radial svg circle {
+      stroke-dashoffset: 0;
+      stroke-width: 10px;
+      stroke: rgba(255, 255, 255, 0.35); }
+    .tv-bio .seasons-box-container .rating-radial svg circle:nth-child(2) {
+      stroke: #00FFC7;
+      stroke-width: 20px;
+      stroke-dashoffset: 0; }
+    .tv-bio .seasons-box-container .rating-radial .rating-value {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #ffffff;
+      font-size: 2.0rem;
+      font-weight: 700;
+      font-family: "Roboto Mono", serif;
+      color: #ffffff; }
+    .tv-bio .seasons-box-container .rating-radial:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      box-shadow: inset 0px 1px 8px 0px rgba(0, 0, 0, 0.3);
+      width: 75%;
+      height: 75%;
+      border-radius: 50%; }
+  .tv-bio .seasons-box-container .rating-text {
+    font-family: "Roboto Mono", serif;
+    color: #ffffff;
+    margin-bottom: 0; }
+  .tv-bio .seasons-box-container .episodes-seasons {
+    max-width: 400px;
+    margin: 30px auto 30px; }
+    .tv-bio .seasons-box-container .episodes-seasons .row {
+      margin: 0; }
+      .tv-bio .seasons-box-container .episodes-seasons .row .segment {
+        padding: 10px; }
+        .tv-bio .seasons-box-container .episodes-seasons .row .segment .borderbox-container {
+          padding: 10px;
+          font-size: 1.1rem;
+          font-family: "Roboto Mono", serif; }
+          .tv-bio .seasons-box-container .episodes-seasons .row .segment .borderbox-container span {
+            display: block;
+            font-weight: 700;
+            font-size: 3.2rem;
+            font-family: "Roboto", sans-serif;
+            color: #00FFC7; }
+        .tv-bio .seasons-box-container .episodes-seasons .row .segment:nth-child(1) {
+          border-right: 1px solid rgba(255, 255, 255, 0.15); }
+  .tv-bio .seasons-box-container .seasons .outer-container {
+    max-width: 1200px;
+    margin: 0 auto; }
+    .tv-bio .seasons-box-container .seasons .outer-container .row {
+      margin: 0; }
+      .tv-bio .seasons-box-container .seasons .outer-container .row .season-segment {
+        padding: 0 8px;
+        margin-bottom: 20px; }
+        .tv-bio .seasons-box-container .seasons .outer-container .row .season-segment .borderbox-container {
+          padding: 10px; }
+          .tv-bio .seasons-box-container .seasons .outer-container .row .season-segment .borderbox-container .img-container p {
+            padding: 8px 5px;
+            background: rgba(0, 0, 0, 0.85);
+            color: #ffffff;
+            position: absolute;
+            bottom: 0;
+            left: 0px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            width: 100%;
+            margin-bottom: 0;
+            font-family: "Roboto Mono", serif;
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-align: center; }
+          .tv-bio .seasons-box-container .seasons .outer-container .row .season-segment .borderbox-container .air-date {
+            font-size: 1.0rem;
+            text-align: right;
+            color: #000000;
+            padding: 5px 0; }
+            .tv-bio .seasons-box-container .seasons .outer-container .row .season-segment .borderbox-container .air-date p {
+              display: inline-block;
+              margin-bottom: 0;
+              background: #ffffff;
+              padding: 5px;
+              border-radius: 3px; }
+              .tv-bio .seasons-box-container .seasons .outer-container .row .season-segment .borderbox-container .air-date p span {
+                font-family: "Roboto Mono", serif;
+                font-weight: 700; }
+  .tv-bio .seasons-box-container .credits .outer-container {
+    padding-top: 30px;
+    max-width: 1200px;
+    margin: 0 auto; }
+    .tv-bio .seasons-box-container .credits .outer-container .row {
+      margin: 0; }
+    .tv-bio .seasons-box-container .credits .outer-container .credits-container {
+      padding: 0 8px;
+      margin-bottom: 20px; }
+      .tv-bio .seasons-box-container .credits .outer-container .credits-container .borderbox-container {
+        padding: 10px; }
+        .tv-bio .seasons-box-container .credits .outer-container .credits-container .borderbox-container .actor-name {
+          margin-top: 10px;
+          margin-bottom: 0;
+          font-weight: 400; }
+        .tv-bio .seasons-box-container .credits .outer-container .credits-container .borderbox-container .character-name {
+          color: #00FFC7;
+          font-family: "Roboto Mono", serif;
+          font-weight: 600; }
+        .tv-bio .seasons-box-container .credits .outer-container .credits-container .borderbox-container .actor-name, .tv-bio .seasons-box-container .credits .outer-container .credits-container .borderbox-container .character-name {
+          font-size: 1.2rem;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap; }
+  .tv-bio .seasons-box-container .similar .outer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 30px; }
+    .tv-bio .seasons-box-container .similar .outer-container .row {
+      margin: 0; }
+      .tv-bio .seasons-box-container .similar .outer-container .row .similar-container {
+        padding: 0 8px;
+        margin-bottom: 20px; }
+        .tv-bio .seasons-box-container .similar .outer-container .row .similar-container .borderbox-container {
+          padding: 10px; }
+          .tv-bio .seasons-box-container .similar .outer-container .row .similar-container .borderbox-container .img-container p {
+            padding: 8px 5px;
+            background: rgba(0, 0, 0, 0.85);
+            color: #ffffff;
+            position: absolute;
+            bottom: 0;
+            left: 0px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            width: 100%;
+            margin-bottom: 0;
+            font-family: "Roboto Mono", serif;
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-align: center; }
