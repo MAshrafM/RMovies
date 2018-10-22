@@ -32,21 +32,21 @@ const CreditsLisitingElement = ({creditsInfo}) => {
                     <Clearfix></Clearfix>
                   </WrapperObj>
                 )
-              } else if((index + 1) % 4 == 0){
+              } else if((index + 1) % 4 === 0){
                 return(
                   <WrapperObj key={credit.name + index}>
                     <CreditsElement {...credit} />
                     <Clearfix visibleMdBlock visibleLgBlock></Clearfix>
                   </WrapperObj>
                 )
-              } else if((index + 1) % 3 == 0){
+              } else if((index + 1) % 3 === 0){
                 return(
                   <WrapperObj key={credit.name + index}>
                     <CreditsElement {...credit} />
                     <Clearfix visibleSmBlock></Clearfix>
                   </WrapperObj>
                 )
-              } else if((index + 1) % 2 == 0){
+              } else if((index + 1) % 2 === 0){
                 return(
                   <WrapperObj key={credit.name + index}>
                     <CreditsElement {...credit} />

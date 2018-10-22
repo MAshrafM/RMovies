@@ -1,10 +1,10 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap'
-import WrapperObj from 'wrapper-object.js'
+import WrapperObj from './wrapper-object.js'
 
 const RatingRadialElement = ({voteAverage, SeasonsNum, EpisodesNum}) => {
   const circ = Math.PI * (60 * 2),
-        rawPercent = (voteAverage / 10) * 100;
+        rawPercent = (voteAverage / 10) * 100,
         pVal = ((100 - rawPercent) / 100) * circ,
         percent = {
           strokeDashoffset: pVal

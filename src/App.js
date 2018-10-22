@@ -6,6 +6,7 @@ import { Switch, Route } from 'react-router-dom';
 import HomeComponent from './components/home-component/home-component.js';
 import SearchResultsComponent from './components/search-results-component/search-results-component.js';
 import MovieBioComponent from './components/movie-bio-component/movie-bio-component.js';
+import TvBioComponent from './components/tv-bio-component/tv-bio-component.js';
 
 // props
 const WrapperObj = (props) => {
@@ -21,6 +22,7 @@ class App extends Component {
             <Route path="/" exact component={HomeComponent} />
             <Route path="/search-results" component={SearchResultsComponent} />
             <Route path="/movie-bio" component={MovieBioComponent} />
+            <Route path="/tv-bio" component={TvBioComponent} />
           </Switch>
         </WrapperObj>
       </div>

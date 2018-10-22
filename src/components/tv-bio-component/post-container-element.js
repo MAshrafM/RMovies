@@ -51,5 +51,3 @@ const PostContainerElement = ({name, genres, languages, lCodes, overview, firstA
 }
 
 export default PostContainerElement;
-
-export default PostContainerElement;
