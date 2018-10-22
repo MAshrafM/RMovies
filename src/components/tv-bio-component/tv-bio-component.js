@@ -63,7 +63,7 @@ class TvBioComponent extends Component{
       console.log(errorResponse);
     });
     
-     axios.get(apiObject.baseUrl + "tv/" + searchObj.qid, {
+    axios.get(apiObject.baseUrl + "tv/" + searchObj.qid, {
       params: {
         api_key: apiObject.apiKey,
         append_to_response: "credits,similar"

@@ -1,7 +1,7 @@
 import React from 'react';
 import LocIcon from '../../assets/icons/location-icon.svg';
 
-const ProductionCountriesElement = (props) => {
+const ProductionCountriesElement = ({production_countries}) => {
   return(
     <section className="production-countries position__relative">
       <div className="outer-container">
@@ -11,20 +11,19 @@ const ProductionCountriesElement = (props) => {
           </header>
         </div>
         <ul className="list-unstyled">
-          <li>
-            <div className="borderbox-container">
-              <img src={LocIcon} className="img-fluid" alt="location" title="location" />
-              <span className="short-code">au</span>
-              <span className="country-name">Australia</span>
-            </div>
-          </li>
-          <li>
-            <div className="borderbox-container">
-              <img src={LocIcon} className="img-fluid" alt="location" title="location" />
-              <span className="short-code">us</span>
-              <span className="country-name">United States</span>
-            </div>
-          </li>
+        {
+          production_countries.map((country, index) => {
+            return(
+              <li key={country.name + index}>
+                <div className="borderbox-container">
+                  <img src={LocIcon} className="img-fluid" alt="location" title="location" />
+                  <span className="short-code">{country['iso_3166_1']}</span>
+                  <span className="country-name">{country.name}</span>
+                </div>
+              </li>
+            )
+          })
+        }
         </ul>
       </div>
     </section>

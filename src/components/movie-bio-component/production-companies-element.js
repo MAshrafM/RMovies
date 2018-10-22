@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ProductionCompaniesElement = (props) => {
+const ProductionCompaniesElement = ({production_companies}) => {
   return(
     <section className="production-companies position__relative">
       <div className="outer-container">
@@ -10,26 +10,17 @@ const ProductionCompaniesElement = (props) => {
           </header>
         </div>
         <ul className="list-unstyled">
-          <li>
-            <div className="borderbox-container">
-              Village Roadshow Pictures
-            </div>
-          </li>
-          <li>
-            <div className="borderbox-container">
-              Warner Bros. Pictures
-            </div>
-          </li>
-          <li>
-            <div className="borderbox-container">
-              Groucho II Film Partnership
-            </div>
-          </li>
-          <li>
-            <div className="borderbox-container">
-              Silver Pictures
-            </div>
-          </li>
+        {
+          production_companies.map((company, index) => {
+            return(
+              <li key={company.name + index}>
+                <div className="borderbox-container">
+                {company.name}
+                </div>
+              </li>
+            )
+          })
+        }
         </ul>
       </div>
     </section>
