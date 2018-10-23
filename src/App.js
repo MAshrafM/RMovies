@@ -7,6 +7,7 @@ import HomeComponent from './components/home-component/home-component.js';
 import SearchResultsComponent from './components/search-results-component/search-results-component.js';
 import MovieBioComponent from './components/movie-bio-component/movie-bio-component.js';
 import TvBioComponent from './components/tv-bio-component/tv-bio-component.js';
+import PersonBioComponent from './components/person-bio-component/person-bio-component.js';
 
 // props
 const WrapperObj = (props) => {
@@ -23,6 +24,7 @@ class App extends Component {
             <Route path="/search-results" component={SearchResultsComponent} />
             <Route path="/movie-bio" component={MovieBioComponent} />
             <Route path="/tv-bio" component={TvBioComponent} />
+            <Route path="/person-bio" component={PersonBioComponent} />
           </Switch>
         </WrapperObj>
       </div>

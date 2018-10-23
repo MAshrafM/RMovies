@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Clearfix } from 'react-bootstrap';
+import { Clearfix } from 'react-bootstrap';
 import WrapperObj from './wrapper-object.js';
 import CreditElement from './credit-element.js';
 
@@ -21,51 +21,55 @@ const CreditsLisitingElement = ({castArray, forType}) => {
     if((index + 1) === 2){
       return(
         <WrapperObj key={creditObj.mediaName + index}>
-          <CreditsElement {...creditObj} />
+          <CreditElement {...creditObj} />
           <Clearfix visibleXsBlock></Clearfix>
         </WrapperObj>
       )
     } else if((index + 1) % 2 === 0 && (index + 1) % 3 === 0 && (index + 1) % 4 === 0){
       return(
         <WrapperObj key={credit.mediaName + index}>
-          <CreditsElement {...creditObj} />
+          <CreditElement {...creditObj} />
           <Clearfix visibleXsBlock visibleSmBlock visibleMdBlock visibleLgBlock></Clearfix>
         </WrapperObj>
       )
-    } else if(((index + 1) % 2 === 0 && (index + 1) % 4 === 0){
-      <WrapperObj key={credit.mediaName + index}>
-          <CreditsElement {...creditObj} />
+    } else if((index + 1) % 2 === 0 && (index + 1) % 4 === 0){
+      return(
+        <WrapperObj key={credit.mediaName + index}>
+          <CreditElement {...creditObj} />
           <Clearfix visibleXsBlock visibleLgBlock></Clearfix>
         </WrapperObj>
-    } else if(((index + 1) % 2 === 0 && (index + 1) % 3 === 0){
-      <WrapperObj key={credit.mediaName + index}>
-          <CreditsElement {...creditObj} />
-          <Clearfix bsClass="clearfix hidden-lg" ></Clearfix>
+      )
+    } else if((index + 1) % 2 === 0 && (index + 1) % 3 === 0){
+      return(
+        <WrapperObj key={credit.mediaName + index}>
+            <CreditElement {...creditObj} />
+            <Clearfix bsClass="clearfix hidden-lg" ></Clearfix>
         </WrapperObj>
+      )
     } else if((index + 1) % 4 === 0){
       return(
         <WrapperObj key={credit.mediaName + index}>
-          <CreditsElement {...creditObj} />
+          <CreditElement {...creditObj} />
           <Clearfix visibleLgBlock></Clearfix>
         </WrapperObj>
       )
     } else if((index + 1) % 3 === 0){
       return(
         <WrapperObj key={credit.mediaName + index}>
-          <CreditsElement {...creditObj} />
+          <CreditElement {...creditObj} />
           <Clearfix bsClass="clearfix hidden-xs hidden-lg"></Clearfix>
         </WrapperObj>
       )
     } else if((index + 1) % 2 === 0){
       return(
         <WrapperObj key={credit.mediaName + index}>
-          <CreditsElement {...creditObj} />
+          <CreditElement {...creditObj} />
           <Clearfix visibleXsBlock></Clearfix>
         </WrapperObj>
       )
     } else {
       return(
-        <CreditsElement {...creditObj} key={credit.mediaName + index} />
+        <CreditElement {...creditObj} key={credit.mediaName + index} />
       )
     } 
   })
