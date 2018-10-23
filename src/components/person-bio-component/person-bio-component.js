@@ -6,6 +6,7 @@ import CreditsListingElement from './credits-listing-element'
 import ExpandIcon from '../../assets/icons/expand-icon.svg'
 import CloseIcon from '../../assets/icons/close-icon-w.svg'
 import RatingIcon from '../../assets/icons/rating-icon.svg'
+import './person-bio-component.css'
 
 class PersonBioComponent extends Component{
   constructor(props){

@@ -1,0 +1,270 @@
+@import '../../_scss/vars';
+
+.person-bio{
+  background: $white;
+  color: #333;
+  
+  .main-bio{
+    .row{
+      margin: 0;
+      .main-img-container{
+        padding: 10px;
+        .borderbox-container{
+          max-width: 350px;
+          img-container{
+            padding: 10px;
+            box-shadow: 0px 4px 17px 0px rgba(204,204,204,0.55);
+          }
+        }
+        
+        .header-container{
+          h1{
+            font-size: 2.0rem;
+            font-family: $contentFont;
+            margin: 20px 0 10px;
+            text-transform: none;
+          }
+          .sub-heading{
+            margin-top: 20px;
+            margin-bottom: 0px;
+            font-size: 1.2rem;
+          }
+          .known-for{
+            margin-bottom: 20px;
+            li{
+              display: inline-block;
+              padding: 5px;
+              box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.25);
+              border-radius: 5px;
+              border: 1px solid rgba(0, 0, 0, 0.1);
+              margin: 3px;
+              font-size: 1.0rem;
+              font-family: $contentFont;
+              font-weight: 700;
+              
+              &:first-child{
+                margin-left: 0;
+              }
+            }
+          }
+          
+          .bio-pop-btn{
+            display: block;
+            margin-bottom: 20px;
+            width: 100%;
+            border: 1px solid $black;
+            background: $black;
+            color: $blue;
+            font-family: $headingFont;
+            font-size: 1.2rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            text-shadow: none;
+            letter-spacing: 3px;
+            box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+            
+            img {
+              max-width: 17px;
+              vertical-align: middle;
+              margin-top: -4px;
+              display: inline-block;
+              margin-left: 5px;
+            }
+          }
+        }
+        
+        .footer-container{
+          padding: 10px;
+          border: 1px solid rgba(0, 0, 0, 0.08);
+          border-radius: 3px;
+          margin-bottom: 5px;
+          
+          h2{
+            font-size: 1.3rem;
+            font-weight: 300;
+            text-transform: none;
+            margin: 10px 0;
+          }
+          p{
+            font-size: 1.2rem;
+            font-family: $contentFont;
+            font-weight: 500;
+            
+            .make-opacity{
+              color: $grey;
+            }
+          }
+          .aka-list{
+            li{
+              font-size: 1.2rem;
+              font-family: "Roboto Mono", serif;
+              font-weight: 500;
+              margin-bottom: 7px;
+              
+              &:first-child{
+                margin-bottom: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+    
+    .main-profile-container{
+      .borderbox-container{
+        .credits-heading{
+          font-size: 1.5rem;
+          font-family: $contentFont;
+          margin: 10px auto 20px;
+          text-transform: none;
+          text-align: center;
+        }
+        
+        .credit-item{
+          padding: 5px;
+          margin-bottom: 15px;
+          .borderbox-container{
+            border: 1px solid transparent;
+            border-left-color: rgba(0, 0, 0, 0.10);
+            border-bottom-color: rgba(0, 0, 0, 0.10);
+            padding: 0 10px 10px 10px;
+            
+            .img-container{
+              .img{
+                 box-shadow: 0px 4px 17px 0px rgba(204,204,204,0.55);
+              }
+            }
+            .movie-name{
+              margin: 15px 0 0;
+              font-size: 1.2rem;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+            }
+          }
+          .meta-list{
+            text-align: right;
+            margin-top: -8px;
+            li{
+              display: inline-block;
+              margin-bottom: 0;
+              vertical-align: middle;
+              
+              .expand-icon{
+                background: $black;
+                border-radius: 5px;
+                padding: 5px;
+                max-width: 23px;
+              }
+              &.episode-count, &.release-date{
+                font-size: 1.0rem;
+                font-family: $contentFont;
+                margin-right: 6px;
+                padding: 5px;
+                border-radius: 5px;
+                box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.25);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  .default-r-model{
+    padding-left: 0 !important;
+    .modal-dialog {
+      .modal-content {
+        overflow: hidden;
+        .modal-header {
+          text-align: right;
+          background: $blue;
+          padding: 10px;
+          .closeThisModal {
+            width: 28px;
+            height: 28px;
+            padding: 0;
+            border-radius: 50%;
+            box-shadow: inset 0px 1px 10px 0px rgba(0,0,0,0.10);
+            background: $blue;
+            border: 0;
+            img {
+              padding: 8px;
+            }
+          }
+        }
+        .modal-body {
+          color: $black;
+          font-size: 1.3rem;
+        }
+        .modal-footer {
+          border-top: 0;
+          padding-top: 0;
+          .defaultButton {
+            width: 85px;
+            font-size: 1.2rem;
+            line-height: 25px;
+            background: $black;
+            border: 1px solid $black;
+            color: $blue;
+            text-shadow: none;
+            box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+          }
+        }
+      }
+    }
+  }
+  
+  .mini-movie-modal{
+    padding-left: 0 !important;
+    .modal-dialog {
+      .modal-content {
+        overflow: hidden;
+        .modal-body {
+          h3 {
+            font-size: 1.5rem;
+            font-weight: 500;
+          }
+          .genre-tags {
+            font-family: $contentFont;
+            margin: 5px 0 15px;
+            li {
+              display: inline-block;
+              padding: 5px;
+              box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.25);
+              border-radius: 5px;
+              border: 1px solid rgba(0, 0, 0, 0.1);
+              margin: 3px;
+              font-size: 1.0rem;
+              font-family: $contentFont;
+              
+              &.rating-block{
+                background: $black;
+                color: $blue;
+                padding: 5px 8px;
+                font-weight: 600;
+                img {
+                  display: inline-block;
+                  vertical-align: middle;
+                  margin-top: -4px;
+                  max-width: 15px;
+                  margin-right: 3px;
+                }
+              }
+              
+              &:first-child{
+                margin-left: 0;
+              }
+            }
+          }
+          .movie-release {
+            margin-top: 15px;
+            span {
+              font-family: $contentFont;
+            }
+          }
+        }
+      }
+    }
+  }
+}

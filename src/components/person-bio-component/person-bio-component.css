@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700|Roboto:300,400,500,700,900");
+/* colors */
+.person-bio {
+  background: #ffffff;
+  color: #333; }
+  .person-bio .main-bio .row {
+    margin: 0; }
+    .person-bio .main-bio .row .main-img-container {
+      padding: 10px; }
+      .person-bio .main-bio .row .main-img-container .borderbox-container {
+        max-width: 350px; }
+        .person-bio .main-bio .row .main-img-container .borderbox-container img-container {
+          padding: 10px;
+          box-shadow: 0px 4px 17px 0px rgba(204, 204, 204, 0.55); }
+      .person-bio .main-bio .row .main-img-container .header-container h1 {
+        font-size: 2.0rem;
+        font-family: "Roboto Mono", serif;
+        margin: 20px 0 10px;
+        text-transform: none; }
+      .person-bio .main-bio .row .main-img-container .header-container .sub-heading {
+        margin-top: 20px;
+        margin-bottom: 0px;
+        font-size: 1.2rem; }
+      .person-bio .main-bio .row .main-img-container .header-container .known-for {
+        margin-bottom: 20px; }
+        .person-bio .main-bio .row .main-img-container .header-container .known-for li {
+          display: inline-block;
+          padding: 5px;
+          box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.25);
+          border-radius: 5px;
+          border: 1px solid rgba(0, 0, 0, 0.1);
+          margin: 3px;
+          font-size: 1.0rem;
+          font-family: "Roboto Mono", serif;
+          font-weight: 700; }
+          .person-bio .main-bio .row .main-img-container .header-container .known-for li:first-child {
+            margin-left: 0; }
+      .person-bio .main-bio .row .main-img-container .header-container .bio-pop-btn {
+        display: block;
+        margin-bottom: 20px;
+        width: 100%;
+        border: 1px solid #000000;
+        background: #000000;
+        color: #00FFC7;
+        font-family: "Roboto", sans-serif;
+        font-size: 1.2rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        text-shadow: none;
+        letter-spacing: 3px;
+        box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.75); }
+        .person-bio .main-bio .row .main-img-container .header-container .bio-pop-btn img {
+          max-width: 17px;
+          vertical-align: middle;
+          margin-top: -4px;
+          display: inline-block;
+          margin-left: 5px; }
+      .person-bio .main-bio .row .main-img-container .footer-container {
+        padding: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.08);
+        border-radius: 3px;
+        margin-bottom: 5px; }
+        .person-bio .main-bio .row .main-img-container .footer-container h2 {
+          font-size: 1.3rem;
+          font-weight: 300;
+          text-transform: none;
+          margin: 10px 0; }
+        .person-bio .main-bio .row .main-img-container .footer-container p {
+          font-size: 1.2rem;
+          font-family: "Roboto Mono", serif;
+          font-weight: 500; }
+          .person-bio .main-bio .row .main-img-container .footer-container p .make-opacity {
+            color: #738290; }
+        .person-bio .main-bio .row .main-img-container .footer-container .aka-list li {
+          font-size: 1.2rem;
+          font-family: "Roboto Mono", serif;
+          font-weight: 500;
+          margin-bottom: 7px; }
+          .person-bio .main-bio .row .main-img-container .footer-container .aka-list li:first-child {
+            margin-bottom: 0; }
+  .person-bio .main-bio .main-profile-container .borderbox-container .credits-heading {
+    font-size: 1.5rem;
+    font-family: "Roboto Mono", serif;
+    margin: 10px auto 20px;
+    text-transform: none;
+    text-align: center; }
+  .person-bio .main-bio .main-profile-container .borderbox-container .credit-item {
+    padding: 5px;
+    margin-bottom: 15px; }
+    .person-bio .main-bio .main-profile-container .borderbox-container .credit-item .borderbox-container {
+      border: 1px solid transparent;
+      border-left-color: rgba(0, 0, 0, 0.1);
+      border-bottom-color: rgba(0, 0, 0, 0.1);
+      padding: 0 10px 10px 10px; }
+      .person-bio .main-bio .main-profile-container .borderbox-container .credit-item .borderbox-container .img-container .img {
+        box-shadow: 0px 4px 17px 0px rgba(204, 204, 204, 0.55); }
+      .person-bio .main-bio .main-profile-container .borderbox-container .credit-item .borderbox-container .movie-name {
+        margin: 15px 0 0;
+        font-size: 1.2rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap; }
+    .person-bio .main-bio .main-profile-container .borderbox-container .credit-item .meta-list {
+      text-align: right;
+      margin-top: -8px; }
+      .person-bio .main-bio .main-profile-container .borderbox-container .credit-item .meta-list li {
+        display: inline-block;
+        margin-bottom: 0;
+        vertical-align: middle; }
+        .person-bio .main-bio .main-profile-container .borderbox-container .credit-item .meta-list li .expand-icon {
+          background: #000000;
+          border-radius: 5px;
+          padding: 5px;
+          max-width: 23px; }
+        .person-bio .main-bio .main-profile-container .borderbox-container .credit-item .meta-list li.episode-count, .person-bio .main-bio .main-profile-container .borderbox-container .credit-item .meta-list li.release-date {
+          font-size: 1.0rem;
+          font-family: "Roboto Mono", serif;
+          margin-right: 6px;
+          padding: 5px;
+          border-radius: 5px;
+          box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.25); }
+  .person-bio .default-r-model {
+    padding-left: 0 !important; }
+    .person-bio .default-r-model .modal-dialog .modal-content {
+      overflow: hidden; }
+      .person-bio .default-r-model .modal-dialog .modal-content .modal-header {
+        text-align: right;
+        background: #00FFC7;
+        padding: 10px; }
+        .person-bio .default-r-model .modal-dialog .modal-content .modal-header .closeThisModal {
+          width: 28px;
+          height: 28px;
+          padding: 0;
+          border-radius: 50%;
+          box-shadow: inset 0px 1px 10px 0px rgba(0, 0, 0, 0.1);
+          background: #00FFC7;
+          border: 0; }
+          .person-bio .default-r-model .modal-dialog .modal-content .modal-header .closeThisModal img {
+            padding: 8px; }
+      .person-bio .default-r-model .modal-dialog .modal-content .modal-body {
+        color: #000000;
+        font-size: 1.3rem; }
+      .person-bio .default-r-model .modal-dialog .modal-content .modal-footer {
+        border-top: 0;
+        padding-top: 0; }
+        .person-bio .default-r-model .modal-dialog .modal-content .modal-footer .defaultButton {
+          width: 85px;
+          font-size: 1.2rem;
+          line-height: 25px;
+          background: #000000;
+          border: 1px solid #000000;
+          color: #00FFC7;
+          text-shadow: none;
+          box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.75); }
+  .person-bio .mini-movie-modal {
+    padding-left: 0 !important; }
+    .person-bio .mini-movie-modal .modal-dialog .modal-content {
+      overflow: hidden; }
+      .person-bio .mini-movie-modal .modal-dialog .modal-content .modal-body h3 {
+        font-size: 1.5rem;
+        font-weight: 500; }
+      .person-bio .mini-movie-modal .modal-dialog .modal-content .modal-body .genre-tags {
+        font-family: "Roboto Mono", serif;
+        margin: 5px 0 15px; }
+        .person-bio .mini-movie-modal .modal-dialog .modal-content .modal-body .genre-tags li {
+          display: inline-block;
+          padding: 5px;
+          box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.25);
+          border-radius: 5px;
+          border: 1px solid rgba(0, 0, 0, 0.1);
+          margin: 3px;
+          font-size: 1.0rem;
+          font-family: "Roboto Mono", serif; }
+          .person-bio .mini-movie-modal .modal-dialog .modal-content .modal-body .genre-tags li.rating-block {
+            background: #000000;
+            color: #00FFC7;
+            padding: 5px 8px;
+            font-weight: 600; }
+            .person-bio .mini-movie-modal .modal-dialog .modal-content .modal-body .genre-tags li.rating-block img {
+              display: inline-block;
+              vertical-align: middle;
+              margin-top: -4px;
+              max-width: 15px;
+              margin-right: 3px; }
+          .person-bio .mini-movie-modal .modal-dialog .modal-content .modal-body .genre-tags li:first-child {
+            margin-left: 0; }
+      .person-bio .mini-movie-modal .modal-dialog .modal-content .modal-body .movie-release {
+        margin-top: 15px; }
+        .person-bio .mini-movie-modal .modal-dialog .modal-content .modal-body .movie-release span {
+          font-family: "Roboto Mono", serif; }
