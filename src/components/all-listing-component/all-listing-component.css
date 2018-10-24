@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700|Roboto:300,400,500,700,900");
+/* colors */
+.all-listing {
+  background: #ffffff;
+  color: #ffffff;
+  min-height: 100vh; }
+  .all-listing .all-listing-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 0; }
+    .all-listing .all-listing-container .block-heading {
+      text-align: right;
+      margin-bottom: 15px;
+      margin-right: 10px; }
+      .all-listing .all-listing-container .block-heading header {
+        display: inline-block; }
+        .all-listing .all-listing-container .block-heading header h2 {
+          margin: 0 10px 0 25px;
+          color: #000000;
+          font-size: 2.0rem;
+          font-family: "Roboto Mono", serif;
+          letter-spacing: 2px;
+          text-transform: none;
+          border-right: 1px solid #00FFC7;
+          padding-right: 10px; }
+          .all-listing .all-listing-container .block-heading header h2 span {
+            color: #738290;
+            font-weight: 500;
+            font-size: 0.9rem;
+            font-family: "Roboto", sans-serif;
+            letter-spacing: 5px;
+            margin-top: 6px;
+            text-transform: uppercase;
+            display: block; }
+      .all-listing .all-listing-container .block-heading .default-btn {
+        font-size: 1.2rem;
+        font-family: "Roboto", sans-serif;
+        letter-spacing: 2px;
+        color: #738290; }
+      .all-listing .all-listing-container .block-heading header, .all-listing .all-listing-container .block-heading .default-btn {
+        vertical-align: middle;
+        margin-top: -4px; }
+    .all-listing .all-listing-container .row {
+      margin: 0; }
+    .all-listing .all-listing-container .movie-listing {
+      padding: 10px;
+      margin-bottom: 10px; }
+      .all-listing .all-listing-container .movie-listing .borderbox-container {
+        border-radius: 3px;
+        overflow: hidden; }
+        .all-listing .all-listing-container .movie-listing .borderbox-container .img-container {
+          background-size: cover;
+          background-position: center center;
+          background-repeat: no-repeat; }
+        .all-listing .all-listing-container .movie-listing .borderbox-container .name-container {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          padding: 10px 8px;
+          background: rgba(0, 0, 0, 0.65); }
+          .all-listing .all-listing-container .movie-listing .borderbox-container .name-container p {
+            margin: 0;
+            font-family: "Roboto Mono", serif;
+            font-weight: 700;
+            font-size: 1.2rem;
+            text-align: center; }
+      .all-listing .all-listing-container .movie-listing .footer-container .meta-list {
+        text-align: right; }
+        .all-listing .all-listing-container .movie-listing .footer-container .meta-list li {
+          vertical-align: middle;
+          margin-top: 4px;
+          display: inline-block; }
+        .all-listing .all-listing-container .movie-listing .footer-container .meta-list .release-date {
+          font-size: 0.9rem;
+          background: #ffffff;
+          color: #000000;
+          padding: 5px;
+          border-radius: 3px;
+          margin-right: 5px;
+          box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.25);
+          letter-spacing: 2px; }
+          .all-listing .all-listing-container .movie-listing .footer-container .meta-list .release-date span {
+            font-weight: 700; }
+        .all-listing .all-listing-container .movie-listing .footer-container .meta-list .view-details {
+          background: #000000;
+          padding: 5px;
+          border: 1px solid rgba(255, 255, 255, 0.25);
+          border-radius: 3px; }
+          .all-listing .all-listing-container .movie-listing .footer-container .meta-list .view-details img {
+            max-width: 15px; }

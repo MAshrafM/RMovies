@@ -8,6 +8,8 @@ import MovieListingElement from './movie-listing-element'
 import PopularPeopleElement from './popular-people-element'
 import WrapperObj from './wrapper-object'
 
+import './all-listing-component.css'
+
 class AllListingComponent extends Component{
   constructor(props){
     super(props)
