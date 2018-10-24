@@ -310,4 +310,41 @@
       }
     }
   }
+  
+  .similar-movies{
+    z-index: $stableIndex;
+    background: rgba(0, 0, 0, 0.85);
+    .outer-container {
+      padding-top: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+      .row {
+        margin: 0;
+        .credit-segment {
+          padding: 0 8px;
+          margin-bottom: 20px;
+          .borderbox-container {
+            padding: 10px;
+            .img-container {
+              .movie-name {
+                font-size: 1.2rem;
+                font-weight: 700;
+                font-family: $contentFont;
+                margin-bottom: 0;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                background: rgba(0, 0, 0, 0.85);
+                padding: 8px 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

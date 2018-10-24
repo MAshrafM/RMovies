@@ -11,6 +11,7 @@ import PostContainerElement from './post-container-element';
 import ProductionCompaniesElement from './production-companies-element';
 import ProductionCountriesElement from './production-countries-element';
 import ReleaseRatingElement from './release-rating-element';
+import SimilarElement from './similar-element';
 import WrapperObj from './wrapper-object'
 
 import './movie-bio-component.css';
@@ -47,7 +48,7 @@ class MovieBioComponent extends Component{
     axios.get(apiObject.baseUrl + "movie/" + searchObj.qid, {
       params: {
         api_key: apiObject.apiKey,
-        append_to_response: "credits"
+        append_to_response: "credits,similar,release_dates"
       }
     }).then((apiResponseObject) => {
       if(apiResponseObject.status === 200 && apiResponseObject.statusText === "OK") {
@@ -56,7 +57,7 @@ class MovieBioComponent extends Component{
       else {
         throw new Error("Something Went Wrong Somewhere");
       }
-    }).then(({backdrop_path, title, genres, original_language, overview, production_countries, production_companies, credits: Cast}) => {
+    }).then(({backdrop_path, title, genres, original_language, overview, production_countries, production_companies, credits: Cast, similar, release_dates}) => {
       const backdropPath = "https://image.tmdb.org/t/p/original" + backdrop_path;
       console.log("success");
       this.setState(($prevState, $nowProps) => {
@@ -76,6 +77,12 @@ class MovieBioComponent extends Component{
             },
             creditsElement:{
               Cast: Cast.cast             
+            },
+            similarElement:{
+              similarListing: similar.results
+            },
+            releaseElement: {
+              releaseObj: release_dates.results
             }
           }
         }
@@ -109,7 +116,8 @@ class MovieBioComponent extends Component{
           </Row>
         </div>
         <CreditsElement {...searchResultsObject.creditsElement}/>
-        <ReleaseRatingElement />
+        <ReleaseRatingElement {..searchResultsObject.releaseElement}/>
+        <SimilarElement {..searchResultsObject.similarElement} />
       </div>
       : null
       }

@@ -1,7 +1,8 @@
 import React from 'react';
+import {Row} from 'react-bootstrap'
 import LocIcon from '../../assets/icons/location-icon.svg';
 
-const ReleaseRatingElement = (props) => {
+const ReleaseRatingElement = ({releaseObj}) => {
   return(
     <div className="release-rating position__relative">
       <div className="outer-container">
@@ -11,33 +12,46 @@ const ReleaseRatingElement = (props) => {
           </header>
         </div>
         <div className="countries">
-          <div className="country-block">
-            <div className="country-header">
-              <header>
-                <img src={LocIcon} className="img-fluid" alt="location" title="location" />
-                <h4 className="text-center">US</h4>
-                <p className="text-center">United States</p>
-              </header>
+        {
+          const monthArray = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+          releaseTypes =  ["Premiere", "Theatrical (Limited)", "Theatrical", "Digital", "Physical", "TV"];
+          releaseObj.map((obj, index) => {
+            return(
+            <div className="country-block">
+              <Row className="show-grid">
+                <div className="country-header">
+                  <header>
+                    <img src={LocIcon} className="img-fluid" alt="location" title="location" />
+                    <h4 className="text-center">{obj.iso_3166_1}</h4>
+                    <p className="text-center">United States</p>
+                  </header>
+                </div>
+                <div className="country-body">
+                  <ul className="list-unstyled">
+                  {
+                    obj.release_dates.map((info, index) => {
+                      const d = new Date(info.release_date),
+                      releaseDateValue = d.getDate() + " " + monthArray[d.getMonth()] + " " + d.getFullYear(),
+                      certification = !!info.certification ? info.certification : "-No Info-";
+                      
+                      return(
+                        <li key={index}>
+                          <div className="borderbox-container">
+                            <p className="rating">{certification}<span>Rating</span></p>
+                            <p className="type">{releaseTypes[Number(info.type)]}</p>
+                            <p className="date">{releaseDateValue}</p>
+                          </div>
+                        </li>
+                      )
+                    })
+                  }
+                  </ul>
+                </div>
+              </Row>
             </div>
-            <div className="country-body">
-              <ul className="list-unstyled">
-                <li>
-                  <div className="borderbox-container">
-                    <p className="rating">R <span>Rating</span></p>
-                    <p className="type">Theatrical Release</p>
-                    <p className="date">30 Mar 1999</p>
-                  </div>
-                </li>
-                <li>
-                  <div className="borderbox-container">
-                    <p className="rating">PG-12 <span>Rating</span></p>
-                    <p className="type">Theatrical Release</p>
-                    <p className="date">30 Mar 1999</p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
+            )
+          })
+        }
         </div>
       </div>
     </div>
