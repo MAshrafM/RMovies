@@ -11,48 +11,48 @@ const SimilarElement =({similarListing}) => {
           <div className="block-heading">
             <header>
               <h3>Similar<br/><span>Movies</span></h3>
-            </head>
+            </header>
             <Row className="show-grid">
              {
                 similarListing.map((similarObj, index) => {
                   if((index + 1) === 2) {
                     return (
-                      <WrapperObject key={similarObj.title + index}>
+                      <WrapperObj key={similarObj.title + index}>
                         <SimilarSegment {...similarObj}/>
                         <Clearfix visibleXsBlock></Clearfix>
-                      </WrapperObject>
+                      </WrapperObj>
                     );
                   }
                   else if((index + 1) % 2 === 0 && (index + 1) % 3 === 0 && (index + 1) % 4 === 0){
                     return (
-                      <WrapperObject key={similarObj.title + index}>
+                      <WrapperObj key={similarObj.title + index}>
                         <SimilarSegment {...similarObj}/>
                         <Clearfix></Clearfix>
-                      </WrapperObject>
+                      </WrapperObj>
                     );
                   }
                   else if((index + 1) % 4 === 0) {
                     return (
-                    <WrapperObject key={similarObj.title + index}>
+                    <WrapperObj key={similarObj.title + index}>
                       <SimilarSegment {...similarObj}/>
                       <Clearfix visibleMdBlock visibleLgBlock></Clearfix>
-                    </WrapperObject>
+                    </WrapperObj>
                     );
                   }
                   else if((index + 1) % 3 === 0) {
                     return (
-                    <WrapperObject key={similarObj.title + index}>
+                    <WrapperObj key={similarObj.title + index}>
                       <SimilarSegment {...similarObj}/>
                       <Clearfix visibleSmBlock></Clearfix>
-                    </WrapperObject>
+                    </WrapperObj>
                     );
                   }
                   else if((index + 1) % 2 === 0) {
                     return (
-                    <WrapperObject key={similarObj.title + index}>
+                    <WrapperObj key={similarObj.title + index}>
                       <SimilarSegment {...similarObj}/>
                       <Clearfix visibleXsBlock></Clearfix>
-                    </WrapperObject>
+                    </WrapperObj>
                     );
                   }
                   else {

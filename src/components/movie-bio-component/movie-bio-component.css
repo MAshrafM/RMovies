@@ -249,3 +249,32 @@
                 .movie-bio .release-rating .outer-container .countries .country-block .country-body ul li .borderbox-container .date, .movie-bio .release-rating .outer-container .countries .country-block .country-body ul li .borderbox-container .type {
                   margin-bottom: 0;
                   font-family: "Roboto Mono", serif; }
+
+.movie-bio .similar-movies {
+  z-index: 160px;
+  background: rgba(0, 0, 0, 0.85); }
+  .movie-bio .similar-movies .outer-container {
+    padding-top: 30px;
+    max-width: 1200px;
+    margin: 0 auto; }
+    .movie-bio .similar-movies .outer-container .row {
+      margin: 0; }
+      .movie-bio .similar-movies .outer-container .row .credit-segment {
+        padding: 0 8px;
+        margin-bottom: 20px; }
+        .movie-bio .similar-movies .outer-container .row .credit-segment .borderbox-container {
+          padding: 10px; }
+          .movie-bio .similar-movies .outer-container .row .credit-segment .borderbox-container .img-container .movie-name {
+            font-size: 1.2rem;
+            font-weight: 700;
+            font-family: "Roboto Mono", serif;
+            margin-bottom: 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.85);
+            padding: 8px 5px; }

@@ -116,8 +116,8 @@ class MovieBioComponent extends Component{
           </Row>
         </div>
         <CreditsElement {...searchResultsObject.creditsElement}/>
-        <ReleaseRatingElement {..searchResultsObject.releaseElement}/>
-        <SimilarElement {..searchResultsObject.similarElement} />
+        <ReleaseRatingElement {...searchResultsObject.releaseElement}/>
+        <SimilarElement {...searchResultsObject.similarElement} />
       </div>
       : null
       }

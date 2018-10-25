@@ -1,0 +1,122 @@
+@import '../../_scss/vars';
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 90;
+  background: $black;
+  .row {
+    margin: 0;
+    .segment {
+      padding: 15px;
+      img {
+        max-width: 25px;
+      }
+      .default-btn {
+        background: transparent;
+        border: 0;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        padding: 0;
+        display: block;
+        margin-left: auto;
+      }
+      
+      &:first-child{
+        font-family: $contentFont;
+        text-transform: uppercase;
+        span {
+          letter-spacing: 3px;
+        }
+        img {
+          display: inline-block;
+          margin-right: 3px;
+          vertical-align: middle;
+          margin-top: -4px;
+        }
+      }
+    }
+  }
+}
+.nav-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: $grey;
+  z-index: 100;
+  max-height: 100vh;
+  overflow: auto;
+  @include transition(all, 0.5s, cubic-bezier(0.36, 0.99, 0.68, 1.34));
+  .nav-header {
+    .row {
+      margin: 0;
+      .segment {
+        padding: 15px;
+        img {
+          max-width: 35px;
+        }
+        .default-btn {
+          background: transparent;
+          border: 0;
+          box-shadow: none;
+          padding: 0;
+          display: block;
+          margin-left: auto;
+        }
+        
+        &:first-child{
+          font-family: $contentFont;
+          font-weight: 300;
+          letter-spacing: 5px;
+          text-transform: uppercase;
+          span {
+            display: block;
+            margin-top: 5px;
+            margin-left: 12px;
+          }
+          img {
+            box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.15);
+            padding: 5px;
+            border-radius: 3px;
+          }
+        }
+      }
+    }
+  }
+  .nav-body {
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 15px;
+    .nav-list {
+      margin-bottom: 0;
+      text-align: right;
+      li {
+        font-size: 1.0rem;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+        a {
+          color: $lightGrey;
+          .link-title {
+            font-size: 2.5rem;
+            font-family: $contentFont;
+            font-weight: 600;
+            letter-spacing: 2px;
+            color: $white;
+            text-transform: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.hidden-nav {
+  visibility: hidden;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateX(-5%);
+}

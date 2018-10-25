@@ -3,6 +3,8 @@ import {Row} from 'react-bootstrap'
 import LocIcon from '../../assets/icons/location-icon.svg';
 
 const ReleaseRatingElement = ({releaseObj}) => {
+  const monthArray = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+        releaseTypes =  ["Premiere", "Theatrical (Limited)", "Theatrical", "Digital", "Physical", "TV"];
   return(
     <div className="release-rating position__relative">
       <div className="outer-container">
@@ -13,8 +15,6 @@ const ReleaseRatingElement = ({releaseObj}) => {
         </div>
         <div className="countries">
         {
-          const monthArray = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-          releaseTypes =  ["Premiere", "Theatrical (Limited)", "Theatrical", "Digital", "Physical", "TV"];
           releaseObj.map((obj, index) => {
             return(
             <div className="country-block">
